@@ -18,17 +18,17 @@ Forms are an important way a web application receive user input. The proper use 
 <!-- specific/measurable goal for students to achieve -->
 *After this workshop, developers will be able to:*
 
-- Evaluate the proper usage of HTML form and input options
-- Compare and contrast the difference between a `method` and an `action`
-- Create forms that generate query parameters
+- **Evaluate** the proper usage of HTML form and input options
+- **Compare and contrast** the difference between a `method` and an `action`
+- **Create** forms that generate query parameters
 
 ## Where should we be now?
 <!-- call out the skills that are prerequisites -->
 *Before this workshop, developers should already be able to:*
 
-- Write HTML & JavaScript
-- Understand the basics of the client/server model
-- Have exposure to jQuery & Bootstrap
+- **Write** HTML & JavaScript
+- **Understand** the basics of the client/server model
+- **Understand** the basics of jQuery
 
 <!--9:35 10 minutes-->
 
@@ -72,7 +72,7 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 
 ![client/server](https://mdn.mozillademos.org/files/4291/client-server.png)
 
-<!--9:45 10 minutes -->
+<!--9:45 15 minutes -->
 
 ## Common Inputs
 
@@ -97,9 +97,13 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 [file]:   https://raw.github.com/h4w5/html_form_cheatsheet_images/master/input-file.png
 [submit]: https://raw.github.com/h4w5/html_form_cheatsheet_images/master/input-submit.png
 
+<!--CFU: Whip-around, see if we can remember all the input types (no peeking) -->
+
 ### Important Attributes
 
 All input types (including `<textarea>`s):
+
+<!--Whip-around-->
 
 - **`type`**: the type of data that is being input (affects the "widget" that is used to display this
   element by the browser).
@@ -112,7 +116,11 @@ All input types (including `<textarea>`s):
 - **`disabled`**: a Boolean attribute indicating that the "widget" is not available for interaction.
 - **`required`**: a Boolean attribute indicating that the field must have a value / cannot be left empty.
 
+<!--CFU: Catch-phrase with what these attributes do -->
+
 Radio buttons or checkboxes:
+
+<!--Whip-around -->
 
 - **`checked`**: a Boolean that indicates whether the control is selected by default (is false unless).
 - **`name`**: the group to which this element is connected. For radio buttons, only one element per
@@ -124,8 +132,7 @@ Radio buttons or checkboxes:
 
 Create an html `form` with two inputs: one for a username (named "username"), the other for password (named "password") (normally you don't see your password when you type it, so make sure it's blocked out!). What happens in the URL when you click submit?
 
-<details>
-<summary>Example solution</summary>
+<!-- Example solution
 
 ```html
 <form>
@@ -135,9 +142,9 @@ Create an html `form` with two inputs: one for a username (named "username"), th
 </form>
 ```
 
-</details>
+-->
 
-<!--9:55 10 minutes-->
+<!--10:00 10 minutes-->
 
 ## Form Submission Experiments
 
@@ -149,6 +156,8 @@ Create an html `form` with two inputs: one for a username (named "username"), th
     <input type="submit">                   <!-- Submit Button -->
 </form>
 ```
+
+<!--Have students answer first before showing answer -->
 
 <details>
 <summary>**What endpoint/action are we submitting to?** (Click Here)</summary>
@@ -198,7 +207,9 @@ artist: "Adele", type: "artist"
 It will be in the form of a query parameter: `?query=adele&type=artist`
 </details>
 
-<!--10:05 10 minutes -->
+<!--10:10 10 minutes -->
+
+<!--Drop this code in a style tag into HTML -->
 
 ## Form Submission & jQuery
 > **Important**: You do not need jQuery to submit a form. You do not need jQuery to submit a form. You do not need jQuery to submit a form.
@@ -213,7 +224,7 @@ $("form").on("submit", function(event){
 })
 ```
 
-In order to **stop** the form from submitting, we have to prevent it's *default* behavior.
+In order to **stop** the form from submitting, we have to prevent its *default* behavior.
 
 ``` javascript
 $("form").on("submit", function(event){
@@ -230,7 +241,7 @@ $("input[name=query]").val(); // "Adele"
 $("input#artist").attr("name"); // "query"
 ```
 
-> **Note**: jQuerys `text` method will not work on inputs!
+> **Note**: jQuery's `text` method will not work on inputs!
 
 If we want to grab **all** of the data (name/value pairs) in the form, we can use jQuery's [`serialize` method](http://api.jquery.com/serialize/).
 
@@ -238,7 +249,7 @@ If we want to grab **all** of the data (name/value pairs) in the form, we can us
 $("form").serialize(); // e.g. "?query=Adele&type=artist"
 ```
 
-Generally we will do this when the form is "submit". Calling `preventDefault` allows us to instead submit the form data in the background without ever refreshing the page!
+Generally we will do this when the form is `submit`ted. Calling `preventDefault` allows us to instead submit the form data in the background without ever refreshing the page!
 
 ``` javascript
 $("form").on("submit", function(event){
@@ -253,7 +264,7 @@ $("form").on("submit", function(event){
 
 > **Reminder**: You do not need jQuery to submit a form.
 
-<!--10:15 10 minutes -->
+<!--10:20 5 minutes -->
 
 ## Sexy Forms
 
@@ -278,30 +289,11 @@ There are two ways to use labels correctly:
 
 > Make sure the label's `for` attribute matches the input's `id` attribute!
 
-#### Bootstrap Forms
-Out of the box, unstyled HTML5 `inputs` look *terrible*.
-
-Bootstrap to the rescue!
-
-``` html
-<form>
-    <div class="form-group">
-        <label for="exampleInput">Example Bootstrap Input</label>
-        <input type="text" class="form-control" id="exampleInput">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-</form>
-```
-
-Note that the `form-group` class is meant to "group" together `label`/`input` pairs (and give them more vertical whitespace / breathing room). Also note that each `input` element receives a `form-control` class.
-
-For super good looking forms, you'll need to dig into the docs: [Bootstrap Forms](https://getbootstrap.com/css/)
-
 <!--10:25 10 minutes -->
 
 ## Common Validations
 
-Form validations help to prevent users from submitting bad data to the server. They are very important to improve UX, but *do not increase the security* of the application.
+Form validations help to prevent users from submitting bad data to the server. They are very important to improve UX, but *do not increase the security* of the application. They can detect:
 
 * a missing or empty field (required)
 * an email address that was missing an "@" symbol (wrong pattern)
@@ -350,9 +342,9 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 
 **1)** Create an html form that contains the html5 [color-picker](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) input (named "i"). When the user picks a color, let's say one with the hex code `#18967A`, and clicks submit, redirect them to, e.g. "https://www.wolframalpha.com/input/?i=%2318967A".
 
-> The `#` character automatically gets converted to `%23` in this context because it is a special character and **not a fragment** in this context.
+> The `#` character automatically gets converted to `%23` in this context because it is a special character.
 
-<details>
+<!--details>
 <summary>Example solution</summary>
 
 ```html
@@ -362,11 +354,11 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </form>
 ```
 
-</details>
+</details-->
 
-**2)** Create an html form that searches github for code examples that match a specific query (q) and language (l). Use `html`, `javascript`, and `ruby` as the languages the user can select from a drop down menu. A search for "audio" in the language "javascript" should direct to https://github.com/search?q=audio&l=javascript.
+**2)** Create an html form that searches github for code examples that match a specific query (q) and language (l). Use `html`, `javascript`, and `css` as the languages the user can select from a drop down menu. A search for "audio" in the language "javascript" should direct to https://github.com/search?q=audio&l=javascript.
 
-<details>
+<!--details>
 <summary>Example solution</summary>
 
 ```html
@@ -381,9 +373,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </form>
 ```
 
-</details>
-
-**3)** Bonus: Bootstrap the forms!
+</details-->
 
 <!-- 10:45 5 minutes -->
 
