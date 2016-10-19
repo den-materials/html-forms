@@ -4,6 +4,12 @@ Market: SF
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--Hook: So who has ever signed up for something online?  What do you usually need to do?  What about buying something online?
+
+Usually there is an interaction with a form of some sort.  So you put in a username, password, maybe an email or credit card information.  Then that information is sent to a server somewhere.  Who's ever had a frustrating experience with one of these forms?
+
+Well, as we go through this course we will learn some ways to reduce that frustration. -->
+
 <!--9:30 5 minutes -->
 
 # HTML Forms
