@@ -4,6 +4,8 @@ Market: SF
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--9:30 5 minutes -->
+
 # HTML Forms
 
 ## Why is this important?
@@ -21,13 +23,14 @@ Forms are an important way a web application receive user input. The proper use 
 - Create forms that generate query parameters
 
 ## Where should we be now?
-[TimeCheck]: # (2:35)
 <!-- call out the skills that are prerequisites -->
 *Before this workshop, developers should already be able to:*
 
 - Write HTML & JavaScript
 - Understand the basics of the client/server model
 - Have exposure to jQuery & Bootstrap
+
+<!--9:35 10 minutes-->
 
 ### An Example `<form>` Element (Tag)
 
@@ -66,9 +69,10 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 
 
 **Client / Server Model**
-[TimeCheck]: # (2:45)
 
 ![client/server](https://mdn.mozillademos.org/files/4291/client-server.png)
+
+<!--9:45 10 minutes -->
 
 ## Common Inputs
 
@@ -133,9 +137,9 @@ Create an html `form` with two inputs: one for a username (named "username"), th
 
 </details>
 
+<!--9:55 10 minutes-->
 
 ## Form Submission Experiments
-[TimeCheck]: # (2:55)
 
 **1)** Given the following HTML...
 
@@ -194,8 +198,9 @@ artist: "Adele", type: "artist"
 It will be in the form of a query parameter: `?query=adele&type=artist`
 </details>
 
+<!--10:05 10 minutes -->
+
 ## Form Submission & jQuery
-[TimeCheck]: # (3:05)
 > **Important**: You do not need jQuery to submit a form. You do not need jQuery to submit a form. You do not need jQuery to submit a form.
 
 Sometimes we want to submit a form, in the background, without ever refreshing the page. This is a common pattern in modern "single page applications". How do you submit form data *in the background*?
@@ -248,9 +253,10 @@ $("form").on("submit", function(event){
 
 > **Reminder**: You do not need jQuery to submit a form.
 
+<!--10:15 10 minutes -->
 
 ## Sexy Forms
-[TimeCheck]: # (4:15)
+
 #### The `<label>` Element
 We encourage you to always use the optional `<label>` tag with each of your form inputs.
 
@@ -291,9 +297,9 @@ Note that the `form-group` class is meant to "group" together `label`/`input` pa
 
 For super good looking forms, you'll need to dig into the docs: [Bootstrap Forms](https://getbootstrap.com/css/)
 
+<!--10:25 10 minutes -->
 
 ## Common Validations
-[TimeCheck]: # (4:25)
 
 Form validations help to prevent users from submitting bad data to the server. They are very important to improve UX, but *do not increase the security* of the application.
 
@@ -338,8 +344,9 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </form>
 ```
 
+<!--10:35 10 minutes -->
+
 ## Independent Practice
-[TimeCheck]: # (4:35)
 
 **1)** Create an html form that contains the html5 [color-picker](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) input (named "i"). When the user picks a color, let's say one with the hex code `#18967A`, and clicks submit, redirect them to, e.g. "https://www.wolframalpha.com/input/?i=%2318967A".
 
@@ -377,6 +384,8 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </details>
 
 **3)** Bonus: Bootstrap the forms!
+
+<!-- 10:45 5 minutes -->
 
 ## Closing Thoughts
 
