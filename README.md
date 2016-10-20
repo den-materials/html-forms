@@ -10,7 +10,7 @@ Usually there is an interaction with a form of some sort.  So you put in a usern
 
 Well, as we go through this course we will learn some ways to reduce that frustration. -->
 
-<!--9:30 5 minutes -->
+<!--11:00 5 minutes -->
 
 # HTML Forms
 
@@ -36,7 +36,7 @@ Forms are an important way a web application receive user input. The proper use 
 - **Understand** the basics of the client/server model
 - **Understand** the basics of jQuery
 
-<!--9:35 10 minutes-->
+<!--11:05 10 minutes-->
 
 ### An Example `<form>` Element (Tag)
 
@@ -78,7 +78,7 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 
 ![client/server](https://mdn.mozillademos.org/files/4291/client-server.png)
 
-<!--9:45 15 minutes -->
+<!--11:15 15 minutes -->
 
 ## Common Inputs
 
@@ -150,7 +150,7 @@ Create an html `form` with two inputs: one for a username (named "username"), th
 
 -->
 
-<!--10:00 10 minutes-->
+<!--11:30 10 minutes-->
 
 ## Form Submission Experiments
 
@@ -213,7 +213,7 @@ artist: "Adele", type: "artist"
 It will be in the form of a query parameter: `?query=adele&type=artist`
 </details>
 
-<!--10:10 10 minutes -->
+<!--11:40 10 minutes -->
 
 <!--Drop this code in a style tag into HTML -->
 
@@ -270,7 +270,7 @@ $("form").on("submit", function(event){
 
 > **Reminder**: You do not need jQuery to submit a form.
 
-<!--10:20 5 minutes -->
+<!--11:50 5 minutes -->
 
 ## Sexy Forms
 
@@ -295,7 +295,7 @@ There are two ways to use labels correctly:
 
 > Make sure the label's `for` attribute matches the input's `id` attribute!
 
-<!--10:25 10 minutes -->
+<!--11:55 10 minutes -->
 
 ## Common Validations
 
@@ -342,7 +342,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </form>
 ```
 
-<!--10:35 10 minutes -->
+<!--12:05 10 minutes -->
 
 ## Independent Practice
 
@@ -381,7 +381,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 
 </details-->
 
-<!-- 10:45 5 minutes -->
+<!-- 12:15 5 minutes -->
 
 ## Closing Thoughts
 
