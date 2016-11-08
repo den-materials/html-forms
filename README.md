@@ -355,7 +355,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 
 > The `#` character automatically gets converted to `%23` in this context because it is a special character.
 
-<!--details>
+<details>
 <summary>Example solution</summary>
 
 ```html
@@ -365,11 +365,11 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </form>
 ```
 
-</details-->
+</details>
 
 **2)** Create an html form that searches github for code examples that match a specific query (q) and language (l). Use `html`, `javascript`, and `css` as the languages the user can select from a drop down menu. A search for "audio" in the language "javascript" should direct to https://github.com/search?q=audio&l=javascript.
 
-<!--details>
+<details>
 <summary>Example solution</summary>
 
 ```html
@@ -384,7 +384,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </form>
 ```
 
-</details-->
+</details>
 
 <!-- 12:15 5 minutes -->
 
