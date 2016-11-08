@@ -58,6 +58,8 @@ In the opening of the `<form>` tag you can see two attributes: `method` & `actio
 
 >For now simply understand that it is convention for [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3) to be used in a request when the client wants to receive data, and for [POST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5) to be used in a request when the client wants to send data.
 
+<!--Keep code above visible -->
+
 ###Challenge: Doomed?
 
 Create an html `form` that, on submit, sends the user to "hasthelargehadroncolliderdestroyedtheworldyet.com". Hint: what's the form action? Bonus: Can you change the submit button to say "Are we doomed?".
@@ -111,18 +113,19 @@ All input types (including `<textarea>`s):
 
 <!--Whip-around-->
 
-- **`type`**: the type of data that is being input (affects the "widget" that is used to display this
-  element by the browser).
 - **`name`**: the key used to describe this data in the HTTP request.
 - **`id`**: the unique identifier that other HTML elements, JavaScript and CSS use to access this
   element in the browser.
-- **`value`**: the default data that is assigned to the element.
 - **`placeholder`**: not a default value, but a useful HTML5 addition of a data "prompt" for an input.
 - **`autofocus`**: defaults the cursor to a specific input when the page originally loads. You can only have one autofocus on your page.
 - **`disabled`**: a Boolean attribute indicating that the "widget" is not available for interaction.
 - **`required`**: a Boolean attribute indicating that the field must have a value / cannot be left empty.
 
-<!--CFU: Catch-phrase with what these attributes do -->
+All input types (including `<textarea>`s):
+
+- **`value`**: the default data that is assigned to the element.
+- **`type`**: the type of data that is being input (affects the "widget" that is used to display this
+  element by the browser).
 
 Radio buttons or checkboxes:
 
@@ -168,7 +171,7 @@ Create an html `form` with two inputs: one for a username (named "username"), th
 <details>
 <summary>**What endpoint/action are we submitting to?** (Click Here)</summary>
 <br>
-We did not supply a form `action`. That means that it will default to the current endpoint. In otherwords, you will refresh the current page.
+We did not supply a form `action`. That means that it will default to the current endpoint. In other words, you will refresh the current page.
 </details>
 
 <details>
@@ -215,7 +218,7 @@ It will be in the form of a query parameter: `?query=adele&type=artist`
 
 <!--11:40 10 minutes -->
 
-<!--Drop this code in a style tag into HTML -->
+<!--Drop this code in a script tag into HTML -->
 
 ## Form Submission & jQuery
 > **Important**: You do not need jQuery to submit a form. You do not need jQuery to submit a form. You do not need jQuery to submit a form.
@@ -373,7 +376,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
   <select name="l">
     <option value="HTML">HTML</option>
     <option value="Javascript">Javascript</option>
-    <option value="Ruby">Ruby</option>
+    <option value="CSS">CSS</option>
   </select>
   <input type="submit" value="Search Github">
 </form>
