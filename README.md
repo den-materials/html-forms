@@ -84,6 +84,8 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 
 ## Common Inputs
 
+<!--Ask dev to just read first column -->
+
 | Field Type | HTML Code | Widget (Control) | Notes |
 |:-- |:-- |:-- |:-- |
 | plain text | `<input type="text">` | ![<input type="text">][text] | the type attribute can be omitted |
@@ -207,7 +209,7 @@ We are making a "GET" request to "https://musicbrainz.org/search".
 <details>
 <summary>**What data will be submitted to the server?** (Click Here)</summary>
 <br>
-artist: "Adele", type: "artist"
+query: "Adele", type: "artist"
 </details>
 
 <details>
