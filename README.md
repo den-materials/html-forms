@@ -121,7 +121,7 @@ All input types (including `<textarea>`s):
 - **`disabled`**: a Boolean attribute indicating that the "widget" is not available for interaction.
 - **`required`**: a Boolean attribute indicating that the field must have a value / cannot be left empty.
 
-All input types (including `<textarea>`s):
+All input types (excluding `<textarea>`s):
 
 - **`value`**: the default data that is assigned to the element.
 - **`type`**: the type of data that is being input (affects the "widget" that is used to display this
