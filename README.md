@@ -10,7 +10,7 @@ Usually there is an interaction with a form of some sort.  So you put in a usern
 
 Well, as we go through this course we will learn some ways to reduce that frustration. -->
 
-<!--11:00 5 minutes -->
+<!--11:05 5 minutes -->
 
 # HTML Forms
 
@@ -25,7 +25,7 @@ Forms are an important way a web application receive user input. The proper use 
 *After this workshop, developers will be able to:*
 
 - **Evaluate** the proper usage of HTML form and input options
-- **Compare and contrast** the difference between a `method` and an `action`
+- **Compare and contrast** a `method` and an `action`
 - **Create** forms that generate query parameters
 
 ## Where should we be now?
@@ -36,7 +36,7 @@ Forms are an important way a web application receive user input. The proper use 
 - **Understand** the basics of the client/server model
 - **Understand** the basics of jQuery
 
-<!--11:05 10 minutes-->
+<!--11:10 10 minutes-->
 
 ### An Example `<form>` Element (Tag)
 
@@ -58,9 +58,9 @@ In the opening of the `<form>` tag you can see two attributes: `method` & `actio
 
 >For now simply understand that it is convention for [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3) to be used in a request when the client wants to receive data, and for [POST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5) to be used in a request when the client wants to send data.
 
-<!--Keep code above visible -->
+<!-- Keep code above visible -->
 
-###Challenge: Doomed?
+### Challenge: Doomed?
 
 Create an html `form` that, on submit, sends the user to "hasthelargehadroncolliderdestroyedtheworldyet.com". Hint: what's the form action? Bonus: Can you change the submit button to say "Are we doomed?".
 
@@ -80,7 +80,7 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 
 ![client/server](https://mdn.mozillademos.org/files/4291/client-server.png)
 
-<!--11:15 15 minutes -->
+<!--11:20 20 minutes -->
 
 ## Common Inputs
 
@@ -155,7 +155,7 @@ Create an html `form` with two inputs: one for a username (named "username"), th
 
 -->
 
-<!--11:30 10 minutes-->
+<!--11:40 10 minutes-->
 
 ## Form Submission Experiments
 
@@ -218,7 +218,7 @@ query: "Adele", type: "artist"
 It will be in the form of a query parameter: `?query=adele&type=artist`
 </details>
 
-<!--11:40 10 minutes -->
+<!--11:50 10 minutes -->
 
 <!--Drop this code in a script tag into HTML -->
 
@@ -275,7 +275,7 @@ $("form").on("submit", function(event){
 
 > **Reminder**: You do not need jQuery to submit a form.
 
-<!--11:50 5 minutes -->
+<!--12:00 5 minutes -->
 
 ## Sexy Forms
 
@@ -300,7 +300,7 @@ There are two ways to use labels correctly:
 
 > Make sure the label's `for` attribute matches the input's `id` attribute!
 
-<!--11:55 10 minutes -->
+<!--12:05 10 minutes -->
 
 ## Common Validations
 
@@ -347,7 +347,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 </form>
 ```
 
-<!--12:05 10 minutes -->
+<!--12:15 10 minutes -->
 
 ## Independent Practice
 
@@ -386,7 +386,7 @@ You may need the user to enter a specific amount of characters. Let's say you ne
 
 </details>
 
-<!-- 12:15 5 minutes -->
+<!-- 12:25 5 minutes -->
 
 ## Closing Thoughts
 
