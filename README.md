@@ -333,7 +333,7 @@ Notice the `required` attribute on the input. Therefore, the form will not submi
 </form>
 ```
 
-The `pattern` attribute allows us to specify the values we will accept. In this case only `bob` or `bobert` are acceptable.
+The `pattern` attribute allows us to specify the values we will accept. In this case only `bob` or `bobert` are acceptable. There are [lots of useful variations](https://www.w3schools.com/tags/att_input_pattern.asp).
 
 #### `length` attribute
 
