@@ -170,22 +170,16 @@ Create an html `form` with two inputs: one for a username (named "username"), th
 
 <!--Have students answer first before showing answer -->
 
-<details>
-<summary>**What endpoint/action are we submitting to?** (Click Here)</summary>
-<br>
+<details><summary>What endpoint/action are we submitting to? (Click Here)</summary>
 We did not supply a form `action`. That means that it will default to the current endpoint. In other words, you will refresh the current page.
 </details>
 
-<details>
-<summary>**What data will be submitted to the server?** (Click Here)</summary>
-<br>
+<details><summary>What data will be submitted to the server? (Click Here)</summary>
 instrument: "bongos"
 </details>
 
-<details>
-<summary>**What will that data look like? How will it be formatted?** (Click Here)</summary>
-<br>
-`?instrument=bongos`
+<details><summary>What will that data look like? How will it be formatted? (Click Here</summary>
+?instrument=bongos
 </details>
 
 
